@@ -17,7 +17,7 @@
     "src",
     "dist"
   ],
-  "author": "curt",
+  "author": "Curt",
   "license": "ISC",
-  "description": ""
+  "description": "abstract the logic of loading data timing when scroll element."
 }
