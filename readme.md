@@ -1,6 +1,8 @@
 # react-scroll-load-hook
 
-The package is similar to other react hook package like: [react-infinite-scroll-hook](https://www.npmjs.com/package/react-infinite-scroll-hook), The reason I rewrite it is to make usage more flexible.
+The package is similar to other react hook package like: [react-infinite-scroll-hook](https://www.npmjs.com/package/react-infinite-scroll-hook).
+
+The reason I rewrite it is to make usage more flexible.
 
 Here is the extension part.
 
@@ -8,10 +10,10 @@ Here is the extension part.
 2. Can support horizontal scrolling or vertical scrolling
 3. I also provide a reverse setting (reverseDirection), when you want to scroll in the opposite direction to load the data, like chat room.
 
-# install
+# Install
 
 ```
-react-scroll-load-hook
+npm i react-scroll-load-hook
 ```
 
 # Usage
