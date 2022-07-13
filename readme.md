@@ -16,6 +16,22 @@ react-scroll-load-hook
 
 # Usage
 
-```
+```js
+const { listData, isLoading, loadMore, hasMore } = useLoadList();
 
+const { containerRef } = useScrollLoad({
+  onLoadMore: loadMore,
+  isLoading,
+  hasMore,
+  useWindow: false,
+});
+
+return (
+  <div ref={containerRef}>
+    {listData.map((value, index) => {
+      //....
+    })}
+    {isLoading && <div> loading...</div>}
+  </div>
+);
 ```
