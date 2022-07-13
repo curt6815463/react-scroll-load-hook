@@ -6,7 +6,7 @@ enum Axis {
   y = 'y',
 }
  
-type useInfiniteScrollerParams = {
+type useScrollLoadParams = {
   onLoadMore: () => void,
   isLoading: boolean,
   hasMore: boolean,
@@ -16,11 +16,11 @@ type useInfiniteScrollerParams = {
   reverseDirection?: boolean
 }
 
-type useInfiniteScrollerReturn = {
+type useScrollLoadReturn = {
   containerRef: React.RefObject<HTMLDivElement>
 }
 
-const useInfiniteScroller = ({
+const useScrollLoad = ({
   onLoadMore,
   isLoading,
   hasMore,
@@ -28,7 +28,7 @@ const useInfiniteScroller = ({
   axis = Axis.y,
   useWindow = false,
   reverseDirection = false,
-}: useInfiniteScrollerParams) : useInfiniteScrollerReturn => {
+}: useScrollLoadParams) : useScrollLoadReturn => {
   
   const containerRef = useRef<HTMLDivElement>(null);
   const scrollListener = useCallback(() => {
@@ -61,4 +61,4 @@ const useInfiniteScroller = ({
   return { containerRef };
 };
 
-export default useInfiniteScroller;
+export default useScrollLoad;

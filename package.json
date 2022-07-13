@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "tsup src/useInfiniteScroller.ts --format esm,cjs,iife --dts"
+    "build": "tsup src/useScrollLoad.ts --format esm,cjs,iife --dts"
   },
   "peerDependencies": {
     "react": ">=16.8.0"
@@ -12,7 +12,7 @@
   },
   "name": "react-scroll-load-hook",
   "version": "1.0.1",
-  "main": "dist/useInfiniteScroller.js",
+  "main": "dist/useScrollLoad.js",
   "files": [
     "src",
     "dist"
