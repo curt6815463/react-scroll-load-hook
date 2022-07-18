@@ -4,7 +4,7 @@
 
 The package is similar to other react hook package like: [react-infinite-scroll-hook](https://www.npmjs.com/package/react-infinite-scroll-hook). But implemented by scroll event.
 
-The hook only responsible for detecting the timing to handle something (loadMore). You need to handle some status data yourself, like whether the data is fetching(isFetching), is there has more data, etc.
+The hook only responsible for detecting the timing to do something (loadMore). You need to handle some status data by yourself, like whether the data is fetching(isLoading), is there has more data, etc.
 
 ## Implementation
 
